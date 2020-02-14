@@ -45,13 +45,9 @@ about:
     to S4.  This is a cross-platform package implemented in pure R that generates standard
     S3 methods.
   license_family: LGPL
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
