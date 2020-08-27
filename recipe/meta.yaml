@@ -1,4 +1,4 @@
-{% set version = "1.8.0" %}
+{% set version = "1.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/R.methodsS3_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.methodsS3/R.methodsS3_{{ version }}.tar.gz
-  sha256: e005f5ee21bfb6fbbf415de957a9ca0ed6e9f2800b95d98d76a9acb3c14185a5
+  sha256: 8a98fb81bcfa78193450f855f614f6f64e6c65daf115f301d97d1f474f5e619b
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,16 +37,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=R.methodsS3
   license: LGPL (>= 2.1)
-  summary: Methods that simplify the setup of S3 generic functions and S3 methods.  Major effort
-    has been made in making definition of methods as simple as possible with a minimum
-    of maintenance for package developers.  For example, generic functions are created
-    automatically, if missing, and naming conflict are automatically solved, if possible.  The
-    method setMethodS3() is a good start for those who in the future may want to migrate
-    to S4.  This is a cross-platform package implemented in pure R that generates standard
-    S3 methods.
+  summary: Methods that simplify the setup of S3 generic functions and S3 methods.  Major effort has been made in making definition of methods as simple as possible with a minimum of maintenance for package developers.  For example, generic functions are created automatically, if missing, and naming conflict are automatically
+    solved, if possible.  The method setMethodS3() is a good start for those who in the future may want to migrate to S4.  This is a cross-platform package implemented in pure R that generates standard S3 methods.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 
 extra:
   recipe-maintainers:
