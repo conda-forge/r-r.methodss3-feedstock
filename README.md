@@ -1,11 +1,11 @@
-About r-r.methodss3
-===================
+About r-r.methodss3-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-r.methodss3-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=R.methodsS3
 
-Package license: LGPL (>= 2.1)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-r.methodss3-feedstock/blob/main/LICENSE.txt)
+Package license: LGPL-2.1-or-later
 
 Summary: Methods that simplify the setup of S3 generic functions and S3 methods.  Major effort has been made in making definition of methods as simple as possible with a minimum of maintenance for package developers.  For example, generic functions are created automatically, if missing, and naming conflict are automatically solved, if possible.  The method setMethodS3() is a good start for those who in the future may want to migrate to S4.  This is a cross-platform package implemented in pure R that generates standard S3 methods.
 
